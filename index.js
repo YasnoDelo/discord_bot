@@ -1,5 +1,8 @@
 require("dotenv").config();
 
+console.log("TOKEN exists:", Boolean(process.env.DISCORD_TOKEN));
+console.log("LOG_CHANNEL_ID:", process.env.LOG_CHANNEL_ID);
+
 const {
   Client,
   GatewayIntentBits,
